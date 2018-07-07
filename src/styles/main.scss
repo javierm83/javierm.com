@@ -1,5 +1,18 @@
-@import 'variables';
+@import 'partials/_variables';
+// @import "_functions";
+// @import "_mixins";
 
-body {
-    background: $color;
-}
+// @import 'generated/iconfont';
+
+@import "partials/_normalize";
+// @import "_reset";
+// @import "_clearfix";
+// @import "_typography";
+// @import "_forms";
+// @import "_elements";
+
+// @import "layout";
+@import 'partials/_fonts';
+
+@import "partials/_typography";
+// @import "_forms";

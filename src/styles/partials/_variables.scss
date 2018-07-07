@@ -1,0 +1,27 @@
+// Fonts
+$font: 'Muli', sans-serif;
+$font-text: $font;
+$font-text-bold: 'Muli', sans-serif;
+$font-header : 'Ovo', sans-serif;
+
+$font-nav : $font-header;
+$font-bold : $font-header;
+$font-btn: $font-header;
+
+$font-weight-bold     : 700;
+$font-weight-regular  : 400;
+
+$font-weight-normal   : $font-weight-regular;
+$font-weight          : $font-weight-regular;
+$font-weight-header   : $font-weight-bold;
+
+// Typography
+$header-font-size-h1: 40px;
+$header-font-size-h2: 26px;
+$header-font-size-h3: 22px;
+
+$text-font-size-p: 16px;
+
+// Colors
+$color-primary: light-blue;
+$color-secondary: light-blue;

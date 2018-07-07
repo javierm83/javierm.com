@@ -1,0 +1,150 @@
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin:0;
+    font-family: $font-header;
+    font-size: $header-font-size-h3;
+}
+
+p, 
+a, 
+figure, 
+li {
+    font-size: $text-font-size-p;
+    font-family: $font-text;
+    text-decoration: none;
+}
+
+p, 
+label{
+    a {
+        color: $color-secondary;
+        font: inherit;
+    }
+}
+
+// // Links
+
+// a {
+//   @extend %link;
+//   &:active,
+//   &:focus {
+//     outline: none;
+//   }
+//   &.primary {
+//     @extend %link-primary;
+//   }
+//   &.secondary {
+//     @extend %link-secondary;
+//   }
+// }
+
+// General Typography
+p,
+figure {
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: $font-weight-bold;
+}
+
+img,
+picture {
+    margin: 0;
+    max-width: 100%;
+}
+
+figure {
+    img {
+        display: block;
+    }
+}
+
+// Quotes
+blockquote {
+    padding:20px;
+
+    &:before {
+        font-family: $font-header;
+        content: open-quote;
+        display: inline-block;
+        margin: 5rem 8rem;
+        margin-left: 0;
+        font-size: 100rem;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    &:after {
+        font-family: $font-header;
+        position: absolute;
+        content: close-quote;
+        display: inline-block;
+        margin: 5rem 8rem;
+        margin-right: 0;
+        font-size: 100rem;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+// Lists
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    //list-style-type: none;
+}
+
+
+// Separators  
+hr {
+    height: 1px;
+    border: 0;
+    background: $color-primary;
+}
+.u{
+	&-heading {
+		font-family: $font-header;
+	}
+	&-text {
+		font-family: $font-text;
+	}
+	&-h1 {
+		font-size: $header-font-size-h1;
+	}
+	&-h2 {
+		font-size: $header-font-size-h2;
+	} 
+	&-h3 {
+		font-size: $header-font-size-h3;
+	}
+
+	&-p {
+		font-size: $text-font-size-p;
+	}
+
+	&-bold {
+		font-weight: $font-text-bold;
+	}
+
+}

@@ -5,13 +5,11 @@
 // @import 'generated/iconfont';
 
 @import "partials/_normalize";
-// @import "_reset";
-// @import "_clearfix";
 // @import "_typography";
 // @import "_forms";
 // @import "_elements";
-
-// @import "layout";
+@import 'partials/_grid';
+@import 'partials/_layout';
 @import 'partials/_fonts';
 
 @import "partials/_typography";

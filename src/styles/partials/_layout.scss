@@ -5,4 +5,16 @@
         max-width: 1080px;
         margin: 0 auto;
     }
+
+    // .l-full-height
+    &-full-height {
+        height: 100vh;
+    }
+
+    // .l-align-vertical
+    &-align-vertical {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

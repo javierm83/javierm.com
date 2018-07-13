@@ -149,9 +149,17 @@ hr {
 	&-bold {
 		font-weight: $font-text-bold;
     }
+
+    &-text-center {
+        text-align: center;
+    }
     
     &-color-white {
         color: $color-white;
+    }
+
+    &-color-pink {
+        color: $color-pink;
     }
 
 }

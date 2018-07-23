@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
+
 import laptop from '../assets/img/laptop.svg';
+import AnimatedSVG from '../components/AnimatedSVG';
 
 const IndexPage = () => (
     <div className="page page--pink-gradient l-full-height l-align-vertical">
@@ -8,7 +10,7 @@ const IndexPage = () => (
             <div className="grid">
 
                 <div className="grid__item one-third u-text-center">
-                    <img src={laptop} alt="" />
+                    <AnimatedSVG svg={laptop} width={'260px'} />
                 </div>
 
                 <div className="grid__item two-thirds">

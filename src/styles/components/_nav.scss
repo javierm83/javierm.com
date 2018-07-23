@@ -1,0 +1,21 @@
+.nav {
+    //.nav-list
+    &-list {
+        //.nav-list__item
+        &__item {
+            display: inline-block;
+            padding: 30px 20px;
+        }
+        //.nav-list__link
+        &__link {
+            color: $color-white;
+            font-size: 16px;
+            font-weight: normal;
+            &:hover,
+            //.nav-list__link--is-active
+            &--is-active {
+                text-decoration: underline;
+            }
+        }
+    }
+}

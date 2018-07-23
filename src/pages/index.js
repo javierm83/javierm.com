@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import laptop from '../assets/img/laptop.svg';
 
 const IndexPage = () => (
-    <div className="jm-page l-full-height l-align-vertical">
+    <div className="page page--pink-gradient l-full-height l-align-vertical">
         <div className="l-full-width">
             <div className="grid">
 
@@ -26,7 +26,7 @@ const IndexPage = () => (
                         Contact me
                     </Link>
                 </div>
-                
+
             </div>
         </div>
     </div>

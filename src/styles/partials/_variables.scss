@@ -28,5 +28,7 @@ $color-secondary: light-blue;
 
 $color-white: white;
 $color-pink: #F61666;
+$color-purple: #B4258C;
 
-$color-pink-gradient: linear-gradient(110deg, $color-pink, #B4258C);
+//Gradients
+$color-pink-gradient: linear-gradient(110deg, $color-pink, $color-purple);

@@ -1,0 +1,7 @@
+.page {
+    margin-top: -80px;
+    //.page--pink-gradient
+    &--pink-gradient {
+        background: $color-pink-gradient;
+    }
+}

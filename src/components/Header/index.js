@@ -1,5 +1,16 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+
+const activeStyle = {
+    textDecoration: 'underline'
+};
+
+const menuItems = [
+    { name: 'Home', url: '/'},
+    { name: 'About', url: '/about-me/'},
+    { name: 'Projects', url: '/my-work/'},
+    { name: 'Contact', url: '/contact-me/'}
+];
 
 const Header = () => (
     <div className="nav">
@@ -8,21 +19,16 @@ const Header = () => (
                 <div className="grid__item">
                     
                     <ul className="nav-list">
-                        <li className="nav-list__item">
-                            <Link className="nav-list__link">{'>_'}</Link>
-                        </li>
-                        <li className="nav-list__item">
-                            <Link className="nav-list__link nav-list__link--is-active" to="/">Home</Link>
-                        </li>
-                        <li className="nav-list__item">
-                            <Link className="nav-list__link" to="/about-me/">About</Link>
-                        </li>
-                        <li className="nav-list__item">
-                            <Link className="nav-list__link" to="/my-work/">Projects</Link>
-                        </li>
-                        <li className="nav-list__item">
-                            <Link className="nav-list__link" to="/contact-me/">Contact</Link>
-                        </li>
+                    <li className="nav-list__item">
+                        <Link className="nav-logo nav-list__link">{'>_'}</Link>
+                    </li>
+                        {menuItems.map(item => (
+                            <li className="nav-list__item">
+                                <Link className="nav-list__link"
+                                exact to={item.url} 
+                                activeStyle={activeStyle}>{item.name}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>

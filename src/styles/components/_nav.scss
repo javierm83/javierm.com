@@ -1,4 +1,11 @@
 .nav {
+    //.nav-logo
+    &-logo {
+        cursor: auto;
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
     //.nav-list
     &-list {
         //.nav-list__item
@@ -11,9 +18,7 @@
             color: $color-white;
             font-size: 16px;
             font-weight: normal;
-            &:hover,
-            //.nav-list__link--is-active
-            &--is-active {
+            &:hover {
                 text-decoration: underline;
             }
         }

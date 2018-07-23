@@ -4,4 +4,16 @@
     &--pink-gradient {
         background: $color-pink-gradient;
     }
+    //.page--blue-gradient
+    &--blue-gradient {
+        background: $color-blue-gradient;
+    }
+    //.page--blue-grey-gradient
+    &--blue-grey-gradient {
+        background: $color-blue-grey-gradient;
+    }
+    //.page--light-grey-gradient
+    &--light-grey-gradient {
+        background: $color-light-grey-gradient;
+    }
 }

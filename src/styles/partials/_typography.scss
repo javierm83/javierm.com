@@ -139,7 +139,9 @@ hr {
         line-height: 1.2;
 	} 
 	&-h3 {
-		font-size: $header-font-size-h3;
+        font-size: $header-font-size-h3;   
+        line-height: 1.2;
+
 	}
 
 	&-p {
@@ -153,6 +155,14 @@ hr {
     &-text-center {
         text-align: center;
     }
+
+    &-text-left {
+        text-align: left;
+    }
+
+    &-text-right {
+        text-align: right;
+    }
     
     &-color-white {
         color: $color-white;
@@ -160,6 +170,10 @@ hr {
 
     &-color-pink {
         color: $color-pink;
+    }
+
+    &-color-blue {
+        color: $color-blue-dark;
     }
 
 }

@@ -8,7 +8,8 @@ const activeStyle = {
 const menuItems = [
     { name: 'Home', url: '/'},
     { name: 'About', url: '/about-me/'},
-    { name: 'Projects', url: '/my-work/'},
+    //{ name: 'Projects', url: '/my-work/'},
+    //{ name: 'Blog', url: '/blog/'},
     { name: 'Contact', url: '/contact-me/'}
 ];
 
@@ -20,7 +21,7 @@ const Header = () => (
                     
                     <ul className="nav-list">
                     <li className="nav-list__item">
-                        <Link className="nav-logo nav-list__link">{'>_'}</Link>
+                        <Link className="nav-logo nav-list__link">{'$>'}</Link>
                     </li>
                         {menuItems.map(item => (
                             <li className="nav-list__item">

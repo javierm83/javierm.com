@@ -15,7 +15,7 @@ const menuItems = [
 ];
 
 const Header = () => {
-    const isContactPage = location.pathname === '/contact-me/';
+    const isContactPage = typeof window !== 'undefined' && window.location.pathname === '/contact-me/';
     const navClass = isContactPage ? 'nav--dark' : '';
     return (
     <div className={`nav ${navClass}`}>

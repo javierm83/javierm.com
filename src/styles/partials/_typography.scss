@@ -13,7 +13,9 @@ h5 {
 p, 
 a, 
 figure, 
-li {
+li,
+label,
+input {
     font-size: $text-font-size-p;
     font-family: $font-text;
     text-decoration: none;
@@ -166,6 +168,10 @@ hr {
     
     &-color-white {
         color: $color-white;
+    }
+
+    &-color-dark {
+        color: $color-dark;
     }
 
     &-color-pink {

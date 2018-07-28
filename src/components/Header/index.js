@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+// TODO: move to scss file, use activeClass
 const activeStyle = {
     textDecoration: 'underline'
 };
@@ -13,8 +14,11 @@ const menuItems = [
     { name: 'Contact', url: '/contact-me/'}
 ];
 
-const Header = () => (
-    <div className="nav">
+const Header = () => {
+    const isContactPage = location.pathname === '/contact-me/';
+    const navClass = isContactPage ? 'nav--dark' : '';
+    return (
+    <div className={`nav ${navClass}`}>
         <div className="l-full-width">
             <div className="grid">
                 <div className="grid__item">
@@ -36,5 +40,6 @@ const Header = () => (
         </div>
     </div>
 )
+};
 
 export default Header

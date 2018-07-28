@@ -1,4 +1,13 @@
 .nav {
+    // .nav--dark
+    &--dark {
+        .nav-list {
+            border-bottom: 1px solid rgba(59, 60, 88, 0.4);
+        };
+        .nav-list__link {
+            color: $color-dark;
+        }
+    }
     //.nav-logo
     &-logo {
         cursor: auto;

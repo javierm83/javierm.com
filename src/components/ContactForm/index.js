@@ -28,13 +28,13 @@ export default class ContactForm extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigateTo(form.getAttribute("action")))
+      .then(this.updateMsg)
       .catch(error => alert(error));
   };
 
-  componentDidMount() {
+  updateMsg = () => {
     this.setState({ 
-      showSuccessMsg: (window.location.href).indexOf('success=true') > 0 
+      showSuccessMsg: true
     });
   }
 

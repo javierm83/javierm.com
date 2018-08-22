@@ -64,7 +64,7 @@ export default class ContactForm extends React.Component {
                 <textarea className="form__input form__input--textarea" name="message" onChange={this.handleChange}></textarea>
             </div>
             <div className="form__group">
-                <button type="submit">Send</button>
+                <button className="button button-primary" type="submit">Send</button>
             </div>
         </form>
     );

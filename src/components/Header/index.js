@@ -24,9 +24,6 @@ const Header = () => {
                 <div className="grid__item">
                     
                     <ul className="nav-list">
-                    <li className="nav-list__item">
-                        <Link className="nav-logo nav-list__link">{'$>'}</Link>
-                    </li>
                         {menuItems.map(item => (
                             <li className="nav-list__item">
                                 <Link className="nav-list__link"

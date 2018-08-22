@@ -12,23 +12,33 @@ const IndexPage = () => (
     <div className="page page--blue-gradient l-full-height l-align-vertical">
         <div className="l-full-width">
             <div className="grid">
-            
+
                 <div className="grid__item one-third u-text-center">
                     <img className="u-margin-top u-margin-bottom" src={embed} alt="Code"/>
                     <h4 className="u-h4 u-color-white u-margin-top">Code</h4>
-                    <p className="u-color-white">Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American.</p>
+                    <p className="u-color-white u-text-left">
+                        I love creating and building awesome products. 
+                        I focus on writing clean, elegant and maintainable code.
+                        My favourite language is <b>Javascript</b>.
+                    </p>
                 </div>
 
                 <div className="grid__item one-third u-text-center">
                     <img className="u-margin-top u-margin-bottom" src={pencil} alt="UX/UI"/>
                     <h4 className="u-h4 u-color-white u-margin-top">UX/UI</h4>
-                    <p className="u-color-white">Do you believe that sldkkldas   sjjdjhhjs   sjjhdhjdsj js jsaj jashj shit? It actually says that in the little book that comes with it: the most popular gun in American.</p>
-                </div>
+                    <p className="u-color-white u-text-left">
+                        I enjoy bringing beautiful, simple and functional user experiences to life.
+                        I'm passionate about clean design patterns and thoughtful interactions. 
+                    </p>
+                </div> 
 
                 <div className="grid__item one-third u-text-center">
                     <img className="u-margin-top u-margin-bottom" style={{maxHeight: '30px'}} src={tablet} alt="Performance"/>
                     <h4 className="u-h4 u-color-white u-margin-top">Performance</h4>
-                    <p className="u-color-white">Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American.</p>
+                    <p className="u-color-white u-text-left">
+                        One of my main goals is building fast and performant web applications.
+                        For this I use best practices and modern techniques and tools.
+                    </p>
                 </div>
 
             </div>
@@ -42,9 +52,11 @@ const IndexPage = () => (
                 </div>
 
                 <div className="grid__item two-thirds u-text-left">
-                    <p className="u-color-white">Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. 
-                    Like they're actually proud of that shit. Do you believe that shit? It actually says that in the little book.</p>
-                    <p className="u-color-white">Do you believe that shit? It actually says that in the little book that comes with it: the most popular </p>               
+                    <p className="u-color-white">
+                        I'm a Front End Developer from Argentina.<br/>
+                        Since 2013 I've made Auckland, New Zealand my new home.<br/>           
+                        I love what I do, I'm always motivated and have the desire to learn more.
+                    </p>               
 
                     <Link 
                         className="button button-primary u-color-blue u-margin-top" 

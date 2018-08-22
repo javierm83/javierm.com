@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import ContactForm from '../components/ContactForm';
-import AnimatedSVG from '../components/AnimatedSVG';
 
 import coffee from '../assets/img/coffee.svg';
 import github from '../assets/img/github.png';
@@ -46,7 +44,7 @@ const ContactPage = () => (
 
                     <div className="u-margin-top u-text-center">
                         <div style={{marginTop: '60px'}}>
-                            <AnimatedSVG duration={80} svg={coffee} width={'120px'} />
+                            <img src={coffee} />
                         </div>
                     </div>
                 </div>

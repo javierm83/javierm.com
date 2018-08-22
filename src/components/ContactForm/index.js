@@ -32,13 +32,19 @@ export default class ContactForm extends React.Component {
       .catch(error => alert(error));
   };
 
+  componentDidMount() {
+    this.setState({ 
+      showSuccessMsg: (window.location.href).indexOf('success=true') > 0 
+    });
+  }
+
   render() {
     return (
         <form 
         className="u-text-left u-margin-bottom"
         name="contact"
         method="post"
-        action="/thanks/"
+        action="/contact-me/?success=true"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={this.handleSubmit}
@@ -51,21 +57,28 @@ export default class ContactForm extends React.Component {
                 <input name="bot-field" onChange={this.handleChange} />
                 </label>
             </p>
-            <div className="form__group">
-                <label className="form__label u-color-dark">Your name:</label>
-                <input className="form__input u-color-dark u-margin-bottom" type="text" name="full-name" onChange={this.handleChange}/>
+            {this.state.showSuccessMsg && <div className="form__group">
+                <h4>Thanks for your message! I will get back to you soon.</h4>
+            </div>}
+            {!this.state.showSuccessMsg && (
+            <div>
+              <div className="form__group">
+                  <label className="form__label u-color-dark">Your name:</label>
+                  <input className="form__input u-color-dark u-margin-bottom" type="text" name="full-name" onChange={this.handleChange} required />
+              </div>
+              <div className="form__group">
+                  <label className="form__label u-color-dark">Your email:</label>
+                  <input className="form__input u-color-dark u-margin-bottom" type="email" name="email" onChange={this.handleChange} required />
+              </div>
+              <div className="form__group">
+                  <label className="form__label u-color-dark">Your message:</label>
+                  <textarea className="form__input form__input--textarea u-margin-bottom u-color-dark" name="message" onChange={this.handleChange} required></textarea>
+              </div>
+              <div className="form__group u-margin-bottom">
+                  <button className="button button-secondary u-color-white" type="submit">Send</button>
+              </div>
             </div>
-            <div className="form__group">
-                <label className="form__label u-color-dark">Your email:</label>
-                <input className="form__input u-color-dark u-margin-bottom" type="email" name="email" onChange={this.handleChange}/>
-            </div>
-            <div className="form__group">
-                <label className="form__label u-color-dark">Your message:</label>
-                <textarea className="form__input form__input--textarea u-margin-bottom u-color-dark" name="message" onChange={this.handleChange}></textarea>
-            </div>
-            <div className="form__group">
-                <button className="button button-secondary u-color-white" type="submit">Send</button>
-            </div>
+            )}
         </form>
     );
   }

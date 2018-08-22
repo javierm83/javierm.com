@@ -7,11 +7,11 @@ const activeStyle = {
 };
 
 const menuItems = [
-    { name: 'Home', url: '/'},
-    { name: 'About', url: '/about-me/'},
-    //{ name: 'Projects', url: '/my-work/'},
-    //{ name: 'Blog', url: '/blog/'},
-    { name: 'Contact', url: '/contact-me/'}
+    { name: 'Home', url: '/', id: '0'},
+    { name: 'About', url: '/about-me/', id: '1'},
+    //{ name: 'Projects', url: '/my-work/', id: '2'},
+    //{ name: 'Blog', url: '/blog/', id: '3'},
+    { name: 'Contact', url: '/contact-me/', id: '4'}
 ];
 
 const Header = () => {
@@ -25,7 +25,7 @@ const Header = () => {
                     
                     <ul className="nav-list">
                         {menuItems.map(item => (
-                            <li className="nav-list__item">
+                            <li key={item.id} className="nav-list__item">
                                 <Link className="nav-list__link"
                                 exact to={item.url} 
                                 activeStyle={activeStyle}>{item.name}</Link>

@@ -6,11 +6,11 @@ class AnimatedSVG extends Component {
         super(props);
     }
     componentDidMount() {
-        new Vivus('animated', {duration: 180, file: this.props.svg});
+        new Vivus('animated', {type: 'sync', duration: this.props.duration, file: this.props.svg});
     }
     render() {
         return (
-            <div style={{'width': this.props.width}} id="animated"></div>
+            <div style={{width: this.props.width, margin: '0 auto'}} id="animated"></div>
         );
     }
 }

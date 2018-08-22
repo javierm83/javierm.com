@@ -35,7 +35,7 @@ export default class ContactForm extends React.Component {
   render() {
     return (
         <form 
-        className="u-text-left"
+        className="u-text-left u-margin-bottom"
         name="contact"
         method="post"
         action="/thanks/"
@@ -52,19 +52,19 @@ export default class ContactForm extends React.Component {
                 </label>
             </p>
             <div className="form__group">
-                <label className="form__label">Your name:</label>
-                <input className="form__input" type="text" name="full-name" onChange={this.handleChange}/>
+                <label className="form__label u-color-dark">Your name:</label>
+                <input className="form__input u-color-dark u-margin-bottom" type="text" name="full-name" onChange={this.handleChange}/>
             </div>
             <div className="form__group">
-                <label className="form__label">Your email:</label>
-                <input className="form__input" type="email" name="email" onChange={this.handleChange}/>
+                <label className="form__label u-color-dark">Your email:</label>
+                <input className="form__input u-color-dark u-margin-bottom" type="email" name="email" onChange={this.handleChange}/>
             </div>
             <div className="form__group">
-                <label className="form__label">Your message:</label>
-                <textarea className="form__input form__input--textarea" name="message" onChange={this.handleChange}></textarea>
+                <label className="form__label u-color-dark">Your message:</label>
+                <textarea className="form__input form__input--textarea u-margin-bottom u-color-dark" name="message" onChange={this.handleChange}></textarea>
             </div>
             <div className="form__group">
-                <button className="button button-primary" type="submit">Send</button>
+                <button className="button button-secondary u-color-white" type="submit">Send</button>
             </div>
         </form>
     );

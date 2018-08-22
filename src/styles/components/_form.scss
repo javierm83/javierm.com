@@ -1,8 +1,18 @@
 .form {
     &__label {
         display: block;
+        margin-bottom: 10px;
     }
     &__input {
         display: block;
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 30px;
+        border: 0;
+        resize: none;
+
+        &.u-color-dark {
+            border-bottom: 1px solid $color-dark;
+        }
     }
 }

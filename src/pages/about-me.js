@@ -12,9 +12,7 @@ const IndexPage = () => (
     <div className="page page--blue-gradient l-full-height l-align-vertical">
         <div className="l-full-width">
             <div className="grid">
-                {/* <div className="grid__item one-whole u-text-center">
-                    <h2 style={{marginTop: '60px'}} className="u-h2 u-color-white u-margin-top u-margin-bottom">About</h2>
-                </div> */}
+            
                 <div className="grid__item one-third u-text-center">
                     <img className="u-margin-top u-margin-bottom" src={embed} alt="Code"/>
                     <h4 className="u-h4 u-color-white u-margin-top">Code</h4>

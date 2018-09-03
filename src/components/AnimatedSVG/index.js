@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import Vivus from 'vivus';
 
 class AnimatedSVG extends Component {
-    constructor(props) {
-        super(props);
-    }
+    
     componentDidMount() {
         new Vivus('animated', {type: 'sync', duration: this.props.duration, file: this.props.svg});
     }

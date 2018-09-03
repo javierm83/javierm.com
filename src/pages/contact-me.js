@@ -1,12 +1,14 @@
 import React from 'react';
-import ContactForm from '../components/ContactForm';
 
+import Layout from "../components/layout"
+import ContactForm from '../components/ContactForm';
 import coffee from '../assets/img/coffee.svg';
 import github from '../assets/img/github.png';
 import gmail from '../assets/img/gmail.png';
 import linkedin from '../assets/img/linkedin.png';
 
 const ContactPage = () => (
+    <Layout>
     <div className="page page--light-grey-gradient l-full-height l-align-vertical">
         <div className="l-full-width">
             <div className="grid">
@@ -25,7 +27,7 @@ const ContactPage = () => (
                         <h3 className="u-h3 u-color-dark u-margin-top u-margin-bottom">You can also find me here</h3>
                         <div className="grid">
                             <div className="grid__item one-third u-text-center u-margin-top u-margin-bottom">
-                                <a target="_blank" href="https://github.com/javierm83">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/javierm83">
                                     <img alt="Github" src={github}/>
                                 </a>
                             </div>
@@ -35,7 +37,7 @@ const ContactPage = () => (
                                 </a>
                             </div>
                             <div className="grid__item one-third u-text-center u-margin-top u-margin-bottom">
-                                <a target="_blank" href="https://www.linkedin.com/in/javier-martinez-02b68b46/">
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/javier-martinez-02b68b46/">
                                     <img alt="Linkedin" src={linkedin}/>
                                 </a>
                             </div>
@@ -44,7 +46,7 @@ const ContactPage = () => (
 
                     <div className="u-margin-top u-text-center">
                         <div style={{marginTop: '60px'}}>
-                            <img src={coffee} />
+                            <img alt="" src={coffee} />
                         </div>
                     </div>
                 </div>
@@ -52,6 +54,7 @@ const ContactPage = () => (
             </div>
         </div>
     </div>
+    </Layout>
 )
 
 export default ContactPage

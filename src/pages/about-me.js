@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
+import Layout from "../components/layout"
 import embed from '../assets/img/embed.svg';
 import pencil from '../assets/img/pencil.svg';
 import tablet from '../assets/img/tablet.svg';
@@ -9,6 +10,7 @@ import profile from '../assets/img/profile.jpeg';
 // TODO: move all inline styles to scss files
 
 const IndexPage = () => (
+    <Layout>
     <div className="page page--blue-gradient l-full-height l-align-vertical">
         <div className="l-full-width">
             <div className="grid">
@@ -48,7 +50,7 @@ const IndexPage = () => (
             <div className="grid">
 
                 <div className="grid__item one-third u-text-center">
-                    <img src={profile} />
+                    <img alt="Profile" src={profile} />
                 </div>
 
                 <div className="grid__item two-thirds u-text-left">
@@ -68,6 +70,7 @@ const IndexPage = () => (
             </div>
         </div>
     </div>
+    </Layout>
 )
 
 export default IndexPage

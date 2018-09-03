@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
 // TODO: move to scss file, use activeClass
 const activeStyle = {
@@ -27,7 +27,7 @@ const Header = () => {
                         {menuItems.map(item => (
                             <li key={item.id} className="nav-list__item">
                                 <Link className="nav-list__link"
-                                exact to={item.url} 
+                                to={item.url} 
                                 activeStyle={activeStyle}>{item.name}</Link>
                             </li>
                         ))}

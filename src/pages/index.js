@@ -1,10 +1,12 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
+import Layout from "../components/layout"
 import laptop from '../assets/img/laptop.svg';
 import AnimatedSVG from '../components/AnimatedSVG';
 
 const IndexPage = () => (
+    <Layout>
     <div className="page page--pink-gradient l-full-height l-align-vertical">
         <div className="l-full-width">
             <div className="grid">
@@ -32,6 +34,7 @@ const IndexPage = () => (
             </div>
         </div>
     </div>
+    </Layout>
 )
 
 export default IndexPage

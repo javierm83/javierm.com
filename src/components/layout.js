@@ -10,8 +10,9 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Hello world!"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Front-End Development, Javacript and User Experience in Auckland, New Zealand' },
+        { name: 'keywords', content: 'Front-End Developer, UX, Web Developer, Javascript, CSS, React, Auckland, New Zealand,' },
+        { name: 'google-site-verification', content: 'sluw-24PBdIy_cSEdzC6JOJv2El823rZFkP_aTRfqwk' },
       ]}
     />
     <div>

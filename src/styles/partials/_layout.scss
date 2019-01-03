@@ -11,6 +11,14 @@
         height: 100vh;
     }
 
+    // .l-align-horizontal
+    &-align-horizontal {
+        padding: 86px 24px 24px;
+        @media (min-width: 1024px){
+            height: calc(100vh - 110px)
+        }
+    }
+
     // .l-align-vertical
     &-align-vertical {
         display: flex;

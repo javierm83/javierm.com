@@ -9,11 +9,11 @@ import linkedin from '../assets/img/linkedin.png';
 
 const ContactPage = () => (
     <Layout>
-    <div className="page page--light-grey-gradient l-full-height l-align-vertical">
+    <div className="page page--light-grey-gradient l-align-horizontal">
         <div className="l-full-width">
             <div className="grid">
 
-                <div className="grid__item one-half u-text-center">
+                <div className="grid__item desk--one-half u-text-center">
                     <div className="box box--white u-margin-top">
                         <div className="form-container">
                             <h3 className="u-h3 u-color-dark u-margin-top u-margin-bottom">Send me a message</h3>
@@ -21,7 +21,7 @@ const ContactPage = () => (
                         </div>
                     </div>
                 </div>
-                <div className="grid__item one-half u-text-center">
+                <div className="grid__item desk--one-half u-text-center">
 
                     <div className="box box--white u-margin-top">
                         <h3 className="u-h3 u-color-dark u-margin-top u-margin-bottom">You can also find me here</h3>

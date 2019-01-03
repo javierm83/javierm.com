@@ -11,11 +11,11 @@ import profile from '../assets/img/profile.jpeg';
 
 const IndexPage = () => (
     <Layout>
-    <div className="page page--blue-gradient l-full-height l-align-vertical">
+    <div className="page page--blue-gradient l-align-horizontal">
         <div className="l-full-width">
             <div className="grid">
 
-                <div className="grid__item one-third u-text-center">
+                <div className="grid__item desk--one-third u-text-center">
                     <img className="u-margin-top u-margin-bottom" src={embed} alt="Code"/>
                     <h4 className="u-h4 u-color-white u-margin-top">Code</h4>
                     <p className="u-color-white u-text-left">
@@ -25,7 +25,7 @@ const IndexPage = () => (
                     </p>
                 </div>
 
-                <div className="grid__item one-third u-text-center">
+                <div className="grid__item desk--one-third u-text-center">
                     <img className="u-margin-top u-margin-bottom" src={pencil} alt="UX/UI"/>
                     <h4 className="u-h4 u-color-white u-margin-top">UX/UI</h4>
                     <p className="u-color-white u-text-left">
@@ -34,7 +34,7 @@ const IndexPage = () => (
                     </p>
                 </div> 
 
-                <div className="grid__item one-third u-text-center">
+                <div className="grid__item desk--one-third u-text-center">
                     <img className="u-margin-top u-margin-bottom" style={{maxHeight: '30px'}} src={tablet} alt="Performance"/>
                     <h4 className="u-h4 u-color-white u-margin-top">Performance</h4>
                     <p className="u-color-white u-text-left">

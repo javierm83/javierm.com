@@ -1,8 +1,8 @@
 {
   "name": "javierm.com",
-  "description": "Gatsby default starter",
+  "description": "My work related website, portfolio and blog.",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Javier Martinez <me@javierm.com>",
   "dependencies": {
     "gatsby": "next",
     "gatsby-cli": "next",

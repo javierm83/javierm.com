@@ -8,7 +8,7 @@ class AnimatedSVG extends Component {
     }
     render() {
         return (
-            <div style={{width: this.props.width, margin: '0 auto'}} id="animated"></div>
+            <div className="hero__image-container" style={{width: this.props.width}} id="animated"></div>
         );
     }
 }

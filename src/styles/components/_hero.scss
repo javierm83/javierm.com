@@ -1,0 +1,14 @@
+.hero {
+    &__image-container {
+        margin: 36px auto;
+        @media (min-width: 1024px){
+            margin: 0 auto;
+        }
+    }
+    &__text-container {
+        @media (max-width: 1023px){
+            text-align: center;
+            padding: 0 24px;
+        }
+    }
+}
